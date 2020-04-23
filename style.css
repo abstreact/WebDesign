@@ -1,14 +1,82 @@
-.text_box{
+.background1{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    height: 650px;
+    width: 100%;
+    background-image: url(background.png);
+    align-items: center;
+    justify-content:center;
     
-
 }
 
-.small_text{
-    text-align: center;
-   
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text1{
+    color: white;
+    margin-bottom: -10px;
+}
+.text2{
+    color: white;
+    margin-bottom: -20px;
     
 }
 
-.big_text{
-    text-align: center;
+.text3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.buttonCU {
+    color: rgb(255, 255, 255); 
+    font-size: 15px; 
+    line-height: 22px; 
+    padding: 7px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background: rgb(107, 86, 165);
+    border: 2px solid rgb(28, 110, 164); 
+    display: inline-block;
+}
+
+.buttonLM{
+    color: rgb(255, 255, 255); 
+    font-size: 15px; 
+    line-height: 22px; 
+    padding: 7px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background:rgb(145, 57, 172);
+    border: 2px solid rgb(28, 110, 164); 
+    display: inline-block;
+}
+
+.background2{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    align-items: center;
+    justify-content:center;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+}
+.header2{
+    font-size: 22px;
 }
