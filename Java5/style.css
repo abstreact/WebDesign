@@ -108,7 +108,6 @@
     border: royalblue;
     border-color: royalblue;
     border-style: double;
-
 }
 .register{
     display: flex;
@@ -167,3 +166,26 @@
     font-size: 13px;
 }
 
+.emriR{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.usernameR{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.passwordR{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}

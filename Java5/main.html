@@ -2,9 +2,29 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+
     </head>
     <body>
-        
+        <script>
+            function showUserPass(){
+                //document.getElementById("logindiv").style.visibility = "hidden";
+                document.getElementById("emriR").style.visibility = "hidden";
+                document.getElementById("usernameR").style.visibility = "hidden";
+                document.getElementById("passwordR").style.visibility = "hidden";
+                
+                document.getElementById("username").style.visibility = "visible";
+                document.getElementById("password").style.visibility = "visible";
+            }
+
+            function showRegister(){
+                document.getElementById("username").style.visibility = "hidden";
+                document.getElementById("password").style.visibility = "hidden";
+                
+                document.getElementById("emriR").style.visibility = "visible";
+                document.getElementById("usernameR").style.visibility = "visible";
+                document.getElementById("passwordR").style.visibility = "visible";
+            }
+        </script>
         <div class="mainbackground">
             <div class="menu">
                     <div>
@@ -16,25 +36,40 @@
                         <a href="#" class="myButton">Contact</a>
                     </div>
             </div>
-            <div class="logindiv">
+            <div id="logindiv" class="logindiv">
                 <div class="loginBar">
-                    <div class="login">
+                    <div class="login" onclick="showUserPass()">
                         <h1>Login</h1>
                     </div>
-                    <div class="register">
+                    <div onclick="showRegister()" class="register">
                         <h1>Register</h1>
                     </div>
                 </div>
-                
-                <div class="username">
+                <div id="username" class="username">
                     <label for="fname">Username</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 </div>
-                <div class="password">
+                <div id="password" class="password">
                     <label for="fname">Password</label>
                     <input type="password" id="fname" name="firstname" placeholder="Password...">
                     <button class="loginbutton">Login</button>
                 </div>
+                <div id="emriR" class="emriR" style="visibility: hidden;">
+                    <label for="fname">Emri</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+                <div id="usernameR" class="usernameR" style="visibility: hidden;">
+                    <label for="fname">Username</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your username..">
+                </div>
+                <div id="passwordR" class="passwordR" style="visibility: hidden;">
+                    <label for="fname">Password</label>
+                    <input type="password" id="fname" name="firstname" placeholder="Password...">
+                    <button class="loginbutton">Register</button>
+                </div>
+            </div>
+
+            </div>
 
             </div>
             
